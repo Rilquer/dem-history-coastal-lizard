@@ -1,0 +1,12 @@
+---
+title: "Demographic Inference of brazilian coastal lizards"
+author: "Rilquer Mascarenhas"
+format: html
+editor: visual
+---
+
+Generate 10 simulations for each of the 1000 sets of randomly drawn parameter values.
+
+```{bash}
+fsc27 -t 1popDNArand.tpl -n10 -e 1popDNArand.est -E 1000
+```

@@ -1,0 +1,38 @@
+// Priors and rules file
+// *********************
+[PARAMETERS]
+//#isInt? #name #dist. #min #max
+//all N are in number of haploid individuals
+
+//Pop Sizes
+1 NCJ unif 100 100000 output
+1 NCA unif 100 100000 output
+1 NIT unif 100 100000 output
+1 NPI unif 100 100000 output
+1 NPD unif 100 100000 output
+1 NBA unif 100 100000 output
+1 NPF unif 100 100000 output
+1 NMA unif 100 100000 output
+1 NAR unif 100 100000 output
+
+//Div Times
+1 TCJCA logunif 1000 50000 output bounded
+1 TCAIT unif TCJCA 100000 output paramInRange
+1 TITPI unif TCAIT 100000 output paramInRange
+1 TPIPD unif TITPI 100000 output paramInRange
+1 TMABA logunif 1000 50000 output bounded
+1 TBAPF unif TMABA 1000000 output paramInRange
+1 TPDPF unif TBAPF 1000000 output paramInRange
+1 TPFAR unif TPDPF 1000000 output paramInRange
+
+//Ancestral resize factorsizes
+0 AF1 unif 1 2 output
+0 AF2 unif 1 2 output
+0 AF3 unif 1 2 output
+0 AF4 unif 1 2 output
+0 AF5 unif 1 2 output
+0 AF6 unif 1 2 output
+0 AF7 unif 1 2 output
+0 AF8 unif 1 2 output
+
+[COMPLEX PARAMETERS]
